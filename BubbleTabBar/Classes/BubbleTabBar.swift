@@ -23,7 +23,7 @@ open class BubbleTabBar: UITabBar {
                 index != NSNotFound else {
                     return
             }
-            select(itemAt: index, animated: false)
+            select(itemAt: index, animated: true)
         }
     }
         
@@ -155,13 +155,6 @@ open class BubbleTabBar: UITabBar {
             let item = items?[index] else {
                 return
         }
-        buttons.forEach { (button) in
-            guard button != sender else {
-                return
-            }
-            button.setSelected(false, animationDuration: animationDuration)
-        }
-        sender.setSelected(true, animationDuration: animationDuration)
         UIView.animate(withDuration: animationDuration) {
             self.container.layoutIfNeeded()
         }
