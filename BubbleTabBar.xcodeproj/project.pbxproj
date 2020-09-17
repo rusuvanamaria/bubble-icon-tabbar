@@ -217,14 +217,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = cuberto;
 				TargetAttributes = {
 					CECEA1A521B6758200F15B7A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1200;
 					};
 					CECEA1D021B6767100F15B7A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -344,6 +346,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -405,6 +408,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -449,7 +453,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuberto.components.BubbleTabBarExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -469,7 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuberto.components.BubbleTabBarExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -498,7 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuberto.components.BubbleTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -529,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuberto.components.BubbleTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
