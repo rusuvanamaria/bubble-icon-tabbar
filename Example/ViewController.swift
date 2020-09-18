@@ -6,17 +6,16 @@
 //  Copyright (c) 2018 askopin@gmail.com. All rights reserved.
 //
 
-import UIKit
 import BubbleTabBar
+import UIKit
 
 class ViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func btnFromCodePressed(_ sender: AnyObject) {
+    @IBAction func btnFromCodePressed(_: AnyObject) {
         let eventsVC = CBSampleViewController()
         eventsVC.tabBarItem = UITabBarItem(title: "Events", image: #imageLiteral(resourceName: "dashboard"), tag: 0)
         let searchVC = CBSampleViewController()
@@ -31,12 +30,10 @@ class ViewController: UIViewController {
         let tabBarController = BubbleTabBarController()
         tabBarController.viewControllers = [eventsVC, searchVC, activityVC, settingsVC]
         tabBarController.tabBar.tintColor = #colorLiteral(red: 0.1579992771, green: 0.1818160117, blue: 0.5072338581, alpha: 1)
-        self.navigationController?.pushViewController(tabBarController, animated: true)
+        navigationController?.pushViewController(tabBarController, animated: true)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
-    
 }

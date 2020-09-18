@@ -9,13 +9,12 @@
 import UIKit
 
 open class BubbleTabBarController: UITabBarController {
-
     fileprivate var shouldSelectOnTabBar = true
 
     open override var selectedViewController: UIViewController? {
         willSet {
             guard shouldSelectOnTabBar,
-                  let newValue = newValue else {
+                let newValue = newValue else {
                 shouldSelectOnTabBar = true
                 return
             }
@@ -42,7 +41,7 @@ open class BubbleTabBarController: UITabBarController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         let tabBar = BubbleTabBar()
-        self.setValue(tabBar, forKey: "tabBar")
+        setValue(tabBar, forKey: "tabBar")
     }
 
     open override func viewDidAppear(_ animated: Bool) {
@@ -65,10 +64,10 @@ open class BubbleTabBarController: UITabBarController {
     }
 
     private func updateTabBarFrame() {
-        var tabFrame = self.tabBar.frame
+        var tabFrame = tabBar.frame
         tabFrame.size.height = barHeight
-        tabFrame.origin.y = self.view.frame.size.height - barHeight
-        self.tabBar.frame = tabFrame
+        tabFrame.origin.y = view.frame.size.height - barHeight
+        tabBar.frame = tabFrame
         tabBar.setNeedsLayout()
     }
 
@@ -95,5 +94,4 @@ open class BubbleTabBarController: UITabBarController {
             delegate?.tabBarController?(self, didSelect: controller)
         }
     }
-
 }

@@ -9,7 +9,6 @@
 import UIKit
 
 class CBSampleViewController: UIViewController {
-
     var lblTitle: UILabel = {
         var label = UILabel()
         label.textColor = #colorLiteral(red: 0.1579992771, green: 0.1818160117, blue: 0.5072338581, alpha: 1)
